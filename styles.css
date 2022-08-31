@@ -612,7 +612,7 @@ footer{
 }
 
 /*Responsive Mobile*/
-@media (max-width: 770px){
+@media (max-width: 768px){
     /*Général*/
     header{
         margin: 0%;
