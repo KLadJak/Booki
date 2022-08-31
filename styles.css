@@ -286,7 +286,6 @@ a:hover > .Vignette2{
 }
 .ImgPopulaires{
     object-fit: cover;
-    object-position: start;
     border-radius: 15px 0 0 15px;
 }
 .ImgPopulaires2{
@@ -509,7 +508,6 @@ footer{
     }
     .Vignette2{
         max-width: 90%;
-        max-height: auto;
         margin-left: 0%;
         padding: 1%;
     }
@@ -555,8 +553,8 @@ footer{
     .FlexBlocH{
         max-width: 100%;
         display: flex;
-        justify-content: none;
-        align-items: none;
+        justify-content: center;
+        align-items: center;
         flex-wrap: nowrap;
     }
     .Bloc1{
@@ -617,7 +615,10 @@ footer{
 @media (max-width: 770px){
     /*Général*/
     header{
-        margin: 3%;
+        margin: 0%;
+    }
+    h3{
+        font-size: large;
     }
     /*Nav*/
     .flexNavGroup{
@@ -629,6 +630,10 @@ footer{
     .flexNavGroupMobile{
         width: 50%;
         border-bottom: solid #F2F2F2;
+    }
+    /*Header*/
+    .FlexTitre{
+        margin: 3%
     }
     /*Search*/
     .SearchBar{
@@ -651,6 +656,9 @@ footer{
         padding-left: 10px;
         padding-right: 10px;
     }
+    .FlexFiltresGroup{
+        margin: 3%;
+    }
     /*Populaires*/
     .FlexStar{
         max-width: 70%;
@@ -661,8 +669,14 @@ footer{
     }
     .Vignette2{
         max-width: 85%;
-        height: 170px;
+        height: 150px;
         margin: 6%;
+    }
+    .Vignette:hover > a{
+        color: black;
+    }
+    .Vignette:hover{
+        transform: none;
     }
     .MarginDétailsP{
         margin-top: -17%;
@@ -687,11 +701,17 @@ footer{
     }
     .Vignette{
         width: 85%;
-        height: 230px;
+        height: 200px;
+    }
+    a:hover > .Vignette2{
+        color: black;
+    }
+    .Vignette2:hover{
+        transform: none;
     }
     .ImgHebergement2{
         width: 100%;
-        height: 150px;
+        height: 120px;
     }
     /*Activités*/
     .BlocActivités{
@@ -707,8 +727,28 @@ footer{
     }
     .Vignette3, .Vignette4, .Vignette5, .Vignette6, .Vignette7{
         max-width: 94%;
-        height: 230px;
+        height: 200px;
         margin: 10px;
+    }
+    a:hover > .Vignette3{
+        color: black;
+        transform: none;
+    }
+    a:hover > .Vignette4{
+        color: black;
+        transform: none;
+    }
+    a:hover > .Vignette5{
+        color: black;
+        transform: none;
+    }
+    a:hover > .Vignette6{
+        color: black;
+        transform: none;
+    }
+    a:hover > .Vignette7{
+        color: black;
+        transform: none;
     }
     .BlocActivités1{
         width: 100%;
@@ -724,7 +764,7 @@ footer{
     }
     .ImgActivités2, .ImgActivités3, .ImgActivités4{
         width: 100%;
-        height: 170px;
+        height: 140px;
     }
     .FlexColumnActivités1{
         display: flex;
